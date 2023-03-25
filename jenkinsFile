@@ -1,0 +1,20 @@
+pipeline{
+	agent any
+
+	tools{
+	maven "MAVEN_HOME"
+	}
+	
+	stages{
+	stage('Preparation'){
+	steps{
+	git 'https://github.com/Raghugithub9/TestNG-Maven-SampleProject.git'
+	}
+	}
+	stage('Build'){
+	steps{
+	bat "mvn clean test"
+	}
+           }
+        }
+}
