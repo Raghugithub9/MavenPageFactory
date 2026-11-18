@@ -14,7 +14,7 @@ import testcases.BaseClass;
 
 public class LoginPage {
 	WebDriver driver= BaseClass.driver;
-	
+	//Extend
 	ExtentTest test = BaseClass.test;
 
 	@FindBy(linkText="Log in")
